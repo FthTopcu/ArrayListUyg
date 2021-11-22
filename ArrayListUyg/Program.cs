@@ -10,7 +10,7 @@ namespace ArrayListUyg
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             ArrayList arrayList = new ArrayList();
             do
@@ -56,6 +56,15 @@ namespace ArrayListUyg
                         else
                         {
                             Console.WriteLine("Aradığınız değer listede yok.");
+                            Console.WriteLine("Bu değeri listeye eklemek istiyor musunuz? E/H");
+
+                            string giris = Console.ReadLine();
+                            giris.ToLower();
+                            if (giris != "h" )
+                            {
+                                arrayList.Add(o1);
+                            }
+                            
                         }
                         break;
 
